@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Install Evidently
 RUN pip install evidently
+RUN pip install scikit-learn pandas numpy
 
 # Expose a port for the Evidently UI (if using the UI)
 EXPOSE 8080
